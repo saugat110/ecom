@@ -18,12 +18,12 @@ error_reporting(E_ALL);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="p-0 m-0">
     <div class="container-fluid p-0">
         <?php include_once('header/header.php'); ?>
 
         <div class="row justify-content-center"> 
-            <div class="col-11 col-md-10 p-md-0 p-2">
+            <div class="col-11 col-md-10 p-2 p-md-0 text-center">
                 <img src="site_image/mid_image.jpg"  id="mid_image" class="image-fluid mb-5">
             </div>
         </div>
