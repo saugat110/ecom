@@ -1,6 +1,6 @@
 
 
-<div class="row px-5 py-4 align-items-center" id="footer_section">
+<div class="row px-5 pt-4 pb-1 align-items-center mb-1" id="footer_section">
 
     <div class="col-3 d-none d-md-block">
         <img src="site_image/footer.png" class="image-fluid w-100" >
@@ -20,4 +20,8 @@
         <p class="footer_slogan">Your</p>
         <p class="footer_slogan">Doorstep</p>
     </div>
+</div>
+<hr>
+<div class="row justify-content-center py-2">
+    <p class="col-12 text-center">Copyright &#169; 2024 Online Tarkari Pasal</p>
 </div>
