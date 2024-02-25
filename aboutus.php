@@ -72,6 +72,8 @@ session_start();
 
 
     <script src="js/bs_js/bootstrap.min.js"></script>
+
+    
 </body>
 
 </html>
