@@ -20,6 +20,19 @@ Password varchar (30) not null
 );
 select * from admin;
 
+CREATE TABLE products (
+	p_id int	 auto_increment PRIMARY KEY ,
+	Pname varchar (30) NOT NULL ,
+	Price int unsigned NOT NULL ,
+	Quantity int unsigned NOT NULL,
+	Image varchar(30) NOT NULL  default ' '
+);
+
+select * from products;
+drop table products;
+
+
+
 
 
 
