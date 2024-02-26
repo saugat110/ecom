@@ -32,7 +32,7 @@
         <?php } ?>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="cart_display.php">
             <img src="site_image/cart.png" id="cart_image" class="pb-2">
           </a>
         </li>
@@ -42,7 +42,7 @@
             $nm = $arr[0];
           ?>
           <li class="nav-item ms-0 ms-md-3">
-            <a class="nav-link me-0 me-lg-4" href="user/user_login.php" style="font-size:13px;"><?php echo 'Hi ' . $nm; ?></a>
+            <a class="nav-link me-0 me-lg-4"  style="font-size:13px;"><?php echo 'Hi ' . $nm; ?></a>
           </li>
         <?php } ?>
       </ul>

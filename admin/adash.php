@@ -8,7 +8,7 @@ if (!isset($_SESSION['admin_logged_in'])){
 unset($_SESSION['prod_add_visited']);
 
 require_once ('../conn/conn.php');
-$query  = "select * from products";
+$query  = "select * from products order by p_id desc";
 $result = $db -> query($query);
 $result = $result -> fetchAll(PDO::FETCH_ASSOC);
 
