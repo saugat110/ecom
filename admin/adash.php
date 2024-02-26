@@ -36,7 +36,7 @@ $result = $result -> fetchAll(PDO::FETCH_ASSOC);
             <!-- for title-->
             <div class="col-9 col-md-10 col-lg-11">
                 <p class="h1 _title m-0">Manage Products /
-                    <a href="view_orders.php">
+                    <a href="orders.php">
                         <img src="../site_image/order.png" id="title_image">
                     </a>
                 </p>

@@ -1,0 +1,36 @@
+:root{
+
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+    /* height: 1000px; */
+    color: rgb(94, 94, 94);
+}
+
+._title {
+    font-weight: 200;
+    color: rgb(124, 124, 124);
+    /* background-color: white; */
+}
+
+#title_image {
+    width: 40px;
+}
+
+#cont1{
+    background-color: rgb(248, 248, 248);
+}
+
+#cont2{
+    margin-top:100px;
+}
+
+table{
+    /* border:1px solid black; */
+    /* border-collapse: collapse; */
+
+}
+th,td{
+    border: 1px solid black;
+}

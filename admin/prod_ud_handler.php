@@ -53,6 +53,8 @@ if (isset($_POST['update_prod_button'])) {
         if ($dup == 0) {
             $query = "update products set Pname = '$pname', Price = '$price', Quantity = '$quantity' where p_id = '$pid' ";
             $db->exec($query);
+            $query2 = "update orders set Pname = '$pname' where p_id = '$pid'";
+            $db->exec($query2);
             header('Location:adash.php');
         } else {
             header("Location:prod_update.php?pid=$pid&dup=1&nm=$pname");
