@@ -15,14 +15,18 @@ if (isset($_SESSION['cart'])) {
         $price = $value['price'];
         $query = "insert into orders (c_id, p_id, Pname, Price) values ('$cid', '$pid', '$pname', '$price')";
         $db->exec($query);
+
+        $query2 = "update products set Quantity = (Quantity -1) where p_id = '$pid'";
+        $db -> exec($query2);
     }
     unset($_SESSION['cart']);
     unset($_SESSION['items_in_cart_id']);
+    // unset($_SESSION['total']);
 }
 
 
 
-header("refresh:5 url=index.php");
+// header("refresh:3 url=index.php");
 
 ?>
 <!DOCTYPE html>
@@ -38,15 +42,18 @@ header("refresh:5 url=index.php");
             color: rgba(0, 0, 0, 0.607);
             font-weight: 200;
         }
+        #r1{
+            height: calc(100vh - 100px);
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row ps-3">
+    <div class="container-fluid" >
+        <div class="row ps-3 align-items-center" id="r1">
             <div class="col-12">
-                <p class="h1" id="tq">Thank you for your payment of RS <?php echo $_SESSION['total']; ?></p>
+                <p class="h1 text-center" id="tq">Thank you for your payment of RS <b><?php echo $_SESSION['total']; ?>:)</b></p>
             </div>
         </div>
     </div>

@@ -34,12 +34,14 @@ drop table products;
 create table orders(
 o_id int auto_increment primary key,
 c_id int not null,
+p_id int not null,
 Pname varchar(30) not null,
 Price int not null,
 Quantity int default 1 not null
 );
 
 select * from orders;
+DROP TABLE orders;
 
 
 
