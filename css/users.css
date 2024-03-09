@@ -1,0 +1,23 @@
+/* for navvar */
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.615);
+}
+
+#navbar{
+    font-size: 21px;
+    font-weight: 200 !important;
+}
+
+.bold-link{
+    text-decoration: underline;
+}
+
+#logout{
+    position: absolute;
+    right:0;
+}
+
+/********************************/
+
+

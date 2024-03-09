@@ -32,9 +32,9 @@ $result = $result -> fetchAll(PDO::FETCH_ASSOC);
     <div class="container-fluid ps-3  fixed-top z-2 opacity-100" id="cont1">
 
         <!--heading part-->
-        <div class="row align-items-center">
+        <!-- <div class="row align-items-center"> -->
             <!-- for title-->
-            <div class="col-9 col-md-10 col-lg-11">
+            <!-- <div class="col-9 col-md-10 col-lg-11">
                 <p class="h1 _title m-0">Manage Products /
                     <a href="orders.php">
                         <img src="../site_image/order.png" id="title_image">
@@ -43,6 +43,16 @@ $result = $result -> fetchAll(PDO::FETCH_ASSOC);
             </div>
             <div class="col-3 col-md-2 col-lg-1 text-end">
                 <a href="admin_logout.php" class="pt-2 pe-3">Logout</a>
+            </div>
+        </div> -->
+
+        <div class="row py-3 border-bottom">
+            <div class="col-12" id="navbar">
+                <span class="ps-3"><a href="stats.php">Dashboard</a></span>
+                <span class="ps-3"><a href="adash.php">Manage Products</a></span>
+                <span class="ps-3"><a href="orders.php">Manage Orders</a></span>
+                <span class="ps-3"><a href="users.php">Manage Users</a></span>
+                <span><a href="admin_logout.php" id="logout" class="pe-4">Logout</a></span>
             </div>
         </div>
 
@@ -145,7 +155,7 @@ $result = $result -> fetchAll(PDO::FETCH_ASSOC);
 
 
 
-
+    <script src="../js/admin_nav.js"></script>
     <script src="../js/bs_js/bootstrap.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

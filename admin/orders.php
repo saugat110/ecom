@@ -30,9 +30,9 @@ $result = $result->fetchAll(PDO::FETCH_COLUMN);
 
     <div class="container-fluid ps-3 fixed-top z-1" id="cont1">
         <!--heading part-->
-        <div class="row align-items-center">
+        <!-- <div class="row align-items-center"> -->
             <!-- for title-->
-            <div class="col-9 col-md-10 col-lg-11">
+            <!-- <div class="col-9 col-md-10 col-lg-11">
                 <p class="h1 _title m-0">Manage Orders /
                     <a href="adash.php">
                         <img src="../site_image/manage.png" id="title_image">
@@ -41,9 +41,18 @@ $result = $result->fetchAll(PDO::FETCH_COLUMN);
             </div>
             <div class="col-3 col-md-2 col-lg-1 text-end">
                 <a href="admin_logout.php" class="pt-2 pe-3">Logout</a>
+            </div> -->
+        <!-- </div> -->
+        <!-- <hr> -->
+        <div class="row py-3 border-bottom">
+            <div class="col-12" id="navbar">
+                <span class="ps-3"><a href="stats.php">Dashboard</a></span>
+                <span class="ps-3"><a href="adash.php">Manage Products</a></span>
+                <span class="ps-3"><a href="orders.php">Manage Orders</a></span>
+                <span class="ps-3"><a href="users.php">Manage Users</a></span>
+                <span><a href="admin_logout.php" id="logout" class="pe-4">Logout</a></span>
             </div>
         </div>
-        <hr>
     </div>
 
     <div class="container-fluid z-0 mb-5" id="cont2">
@@ -93,7 +102,7 @@ $result = $result->fetchAll(PDO::FETCH_COLUMN);
                         <p>Total: <?php echo $total; ?> <span class="ms-3">Phone: <?php echo $result1['Phone']; ?></span></p>
                         <span>Delivery Address: <?php echo $result1['Address'];?></span>
                         <a href="delete_order.php?cid=<?php echo $cid; ?>" class="ms-2">
-                            <button class="btn btn-outline-danger btn-sm">Delivered &check;</button>
+                            <button class="btn btn-outline-danger btn-sm">Mark Delivered &check;</button>
                         </a>
                     </div>
                 <?php
@@ -105,6 +114,7 @@ $result = $result->fetchAll(PDO::FETCH_COLUMN);
     </div>
 
     <!-- <p><?php echo $result[0]; ?></p> -->
+    <script src="../js/admin_nav.js"></script>
     <script src="../js/bs_js/bootstrap.min.js"></script>
 </body>
 
