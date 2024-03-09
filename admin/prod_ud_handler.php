@@ -47,7 +47,8 @@ if (isset($_POST['update_prod_button'])) {
         header('Location:adash.php');
     } else {  //name same xaina vne check dup, then only update
         $lower_name = strtolower($pname);
-        $query2 = "select * from products where lower(Pname) like concat('$lower_name', '%')";
+        // $query2 = "select * from products where lower(Pname) like concat('$lower_name', '%')";
+        $query2 = "select * from products where lower(Pname) = '$lower_name' ";
         $result = $db->query($query2);
         $dup = $result->rowCount();
         if ($dup == 0) {

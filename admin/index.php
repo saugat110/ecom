@@ -1,8 +1,9 @@
 <?php
 session_start();
 if(isset($_SESSION['admin_logged_in'])){
-    header("Location:adash.php");
+    header("Location:stats.php");
 }
+
 ?>
 <!doctype html>
 <html lang="en">

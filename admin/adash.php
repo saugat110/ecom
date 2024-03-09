@@ -66,7 +66,7 @@ $result = $result -> fetchAll(PDO::FETCH_ASSOC);
             </div>
             <?php if(!isset($_GET['dup'])) { ?>
             <div class="col-10 col-sm-6 col-md-4 col-lg-auto  px-1 me-3">
-                <input type="text" name="pname" class="form-control form-control-sm" id="i1" required>
+                <input type="text" name="pname" class="form-control form-control-sm" id="i1" required pattern="[a-zA-Z]+" title="Only Alphabets allowed">
             </div>
             <?php } else { ?>
             <div class="col-10 col-sm-6 col-md-4 col-lg-auto  px-1 me-3">

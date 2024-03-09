@@ -33,5 +33,5 @@ if($user_found == 0){
 }else if ($user_found == 1 and $p_matched ==0 ){
     header("Location:index.php?pnm=1");
 }else if ($user_found == 1 and $p_matched ==1 ){
-    header("Location:adash.php");
+    header("Location:stats.php");
 }

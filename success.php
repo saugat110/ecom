@@ -26,7 +26,7 @@ if (isset($_SESSION['cart'])) {
 
 
 
-// header("refresh:3 url=index.php");
+header("refresh:3 url=index.php");
 
 ?>
 <!DOCTYPE html>

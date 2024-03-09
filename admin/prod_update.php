@@ -49,37 +49,37 @@ $result = $result -> fetch(PDO::FETCH_ASSOC);
                 <div class="mb-3">
                     <label for="i1" class="form-label">Enter Name:</label>
                     <input type="text" name="pname" class="form-control form-control-sm" id="i1"
-                        value="<?php echo $result['Pname'];?>">
+                        value="<?php echo $result['Pname'];?>" required pattern="[a-zA-Z]+" title="Only alphabetes allowed">
                 </div>
                 <div class="mb-3">
                     <label for="i2" class="form-label">Enter Price:</label>
                     <input type="number" name="price" class="form-control form-control-sm" id="i2"
-                        value="<?php echo $result['Price'];?>" min="1" step="1">
+                        value="<?php echo $result['Price'];?>" min="1" step="1" required>
                 </div>
                 <div class="mb-3">
                     <label for="i3" class="form-label">Enter Quantity:</label>
                     <input type="number" name="quan" class="form-control form-control-sm" id="i3"
-                        value="<?php echo $result['Quantity'];?>" min="1" step="1">
+                        value="<?php echo $result['Quantity'];?>" min="1" step="1" required>
                 </div>
                 <?php } else { ?>
                 <div class="mb-3">
                     <label for="i1" class="form-label">Enter Name:</label>
-                    <input type="text" name="pname" class="form-control form-control-sm is-invalid" id="i1">
+                    <input type="text" name="pname" class="form-control form-control-sm is-invalid" id="i1" required pattern="[a-zA-Z]+" title="Only alphabetes allowed">
                     <div id="i1Feedback" class="invalid-feedback"><?php echo $_GET['nm'];?> exists </div>
                 </div>
                 <div class="mb-3">
                     <label for="i2" class="form-label">Enter Price:</label>
                     <input type="number" name="price" class="form-control form-control-sm" id="i2"
-                        value="<?php echo $result['Price'];?>" min="1" step="1">
+                        value="<?php echo $result['Price'];?>" min="1" step="1" required>
                 </div>
                 <div class="mb-3">
                     <label for="i3" class="form-label">Enter Quantity:</label>
                     <input type="number" name="quan" class="form-control form-control-sm" id="i3"
-                        value="<?php echo $result['Quantity'];?>" min="1" step="1">
+                        value="<?php echo $result['Quantity'];?>" min="1" step="1" required>
                 </div>
                 <?php } ?>
 
-                <input type="hidden" name="pid" value="<?php echo $result['p_id'];?>">
+                <input type="hidden" name="pid" value="<?php echo $result['p_id'];?>" >
                 <input type="submit" value="Update" name="update_prod_button" class="btn btn-outline-primary btn-sm">
             </div>
         </form>

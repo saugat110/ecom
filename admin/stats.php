@@ -3,6 +3,10 @@ session_start();
 ini_set('display_errors' ,1);
 error_reporting(E_ALL);
 
+if (!isset($_SESSION['admin_logged_in'])){
+    header("Location:index.php");
+}
+
 require_once '../conn/conn.php';
 $query = "select c_id from customers";
 $result = $db -> query($query);
